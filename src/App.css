@@ -1,0 +1,48 @@
+body{
+  background-color: black;
+}
+
+
+
+nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    /* margin-bottom: 10px; */
+    background-color: black;
+    padding: 20px;
+    font-family: "Poppins";
+    
+    /* background-image: url(https://media.giphy.com/media/KZRkHRdUCJE79gTX2M/giphy.gif); */
+    
+  }
+ 
+  
+  nav h1{    
+    margin-right: auto; 
+  }
+
+  /* .register{
+    background-color: #e2e2e2;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 110px;
+}
+
+.register:hover{
+    background-color: white;
+    color: white;
+} */
+
+
+  
