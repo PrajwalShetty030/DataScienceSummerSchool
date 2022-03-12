@@ -1,0 +1,30 @@
+h3{
+    color: black;
+   
+    font-size: 25px;
+    font-style: italic;
+    font-family: Poppins;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+body{
+    background-image: url('/public/login5_blur2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;   
+}
+
+
+
+.Textfield{
+    color: white;
+}
+ .Typography{
+     font-size: 10px;
+ }
+
+/* *{
+    background-image: url('/public/hacker_1.jpeg');
+    background-size: cover;
+} */
