@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+     margin: 0; 
+    padding: 0;
+    
+   
+}
+
+
+body{
+    font-family: Poppins;
+    font-size: 100%;
+    background-color: black;
+    
+}
+
+
+
+.timer-container{
+       
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.timer{
+    background-color: black;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7em;
+    padding-top: 2em;
+    width: 100%;
+    height: 100%; 
+    margin-top: -5em;
+    /* background-image: url(https://i.gifer.com/37F0.gif);
+         */
+
+         background-image: url(https://i.pinimg.com/originals/71/cb/8c/71cb8c0496cd6c4e59c917fa8b9acb08.gif);
+     
+      
+      /*background-image: url(/public/bg.jpg); */
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;  
+    
+} 
+
+.timer div :first-child{
+    text-align: center;
+    
+}
+
+h2{
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: Poppins;
+    font-size: 56px;
+}
+
+
+
+.timer div:last-child{
+    border: 1px solid wheat;
+    font-style: bold;
+    
+    font-size: 15px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 1em;
+    padding: 3em;
+    text-align: center;
+}
+section p:first-child, .timer div:last-child span {
+    font-size: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 480px){
+.timer div:last-child {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+}
+} 
+
+
