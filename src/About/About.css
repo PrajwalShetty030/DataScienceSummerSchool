@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 130px;
+
+}
+
+h3{
+    text-align: center;
+    margin-top: 22px;
+
+
+}
+
+p{
+    margin: 50px 176px;
+    /* justify-content: center; */
+}
+
+.footer{
+    /* margin-top: 1rem; */
+    /* padding: 1rem; */
+    background-color: rgb(233, 216, 159);
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: cente;
+    justify-content: center;
+  }
+
+  .footer1{
+      display: flex;
+      flex-direction: column;
+  }
+
