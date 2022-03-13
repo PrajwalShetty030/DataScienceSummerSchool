@@ -2,9 +2,14 @@ import './Timer.css'
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@material-ui/core';
 import Buttons from '../Button/Button';
+// import windowPosition from './hooks/windowPosition';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
+import { Link as Scroll } from 'react-scroll';
 
 const Timer = ()=> {
+
+  // const checked =  windowPosition('header');
 
   const [timerDays, setTimerDays] = useState('00');
   const [timerHours, setTimerHours] = useState('00');
@@ -50,9 +55,21 @@ const Timer = ()=> {
     return (
      
         <section className="timer-container">
-           <div >
-        <Buttons className="register" value = "Register">  </Buttons>
+           <div>
+        <Buttons className="register" value = "Register" >  </Buttons>
         </div>
+
+
+        <Scroll to="moreInfo" smooth={true}> 
+        <div className="container">
+        <div className="arrow">      
+        <h4>More Info</h4>   
+                <KeyboardArrowDownIcon  fontSize="large" color="warning" /> 
+                </div>
+                </div>  
+        </Scroll>
+
+
         <section className = "timer">
         <div className="text">
            <h2 >DATA SCIENCE SUMMER SCHOOL 2022</h2>
@@ -89,16 +106,70 @@ const Timer = ()=> {
 
       </section>
 
-      <div >
-       
+      <div className="info" id = "moreInfo"> 
 
-      
-        
+      <section className='abt'>
+
+        <div className='about '>
+
+            <div className='aboutcard__body'>
+
+               
+                
+                
+                <h2 className='aboutcard__title '>Important Information</h2>
+                <hr/>
+                <br/>
+
+                <p className='aboutcard__description '>
+
+                  <div className='content_info'>
+
+                  <li className="li_border">  06th September 2022  -  11th September 2022  </li>
+                  <br/>
+
+                  <li className="li_border">   6 exciting Data Science courses  </li>
+                  <br/>
+
+                  <li className="li_border">  Mega Hackathon on the last day  </li>
+                  <br/>
+
+                  <li className="li_border">  Hybrid Mode of learning (Online & In-pres) </li>
+                  <br/>
+
+                  <li className="li_border">  100% Funded  </li>
+                  <br/>
+
+                  </div>
+
+                </p>
+
+            </div>
+
+           
 
 
+
+        </div>
+
+   
+
+        </section>
+
+    
+
+
+        {/* <div className="image">
+          <img src="daad.jpg"></img>
+        </div> */}
       </div>
+        
+      
 
     </section>
+
+  
+  
     )
 
 }
