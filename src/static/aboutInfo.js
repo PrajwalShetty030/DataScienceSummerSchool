@@ -18,6 +18,11 @@ const aboutInfo = [
         imageUrl: process.env.PUBLIC_URL + "https://acegif.com/wp-content/gifs/globe-39.gif",
         subtitle: "Nations on campus"
     },
+
+
+
+
+
 ]
 
 export default aboutInfo;
