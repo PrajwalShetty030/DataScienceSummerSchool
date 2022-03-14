@@ -21,7 +21,7 @@ const hackInfo = [
 
     {
         title: 'No registration fees',
-        imageUrl: process.env.PUBLIC_URL + "/hack_money.jpg",
+        imageUrl: process.env.PUBLIC_URL + "/hackEuro.jpeg",
         time: 1500,
     },
 
