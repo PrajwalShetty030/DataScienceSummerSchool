@@ -20,11 +20,43 @@ nav{
     /* background-image: url(https://media.giphy.com/media/KZRkHRdUCJE79gTX2M/giphy.gif); */
     
   }
+
+   a {
+    /* font-family: "Montserrat", sans-serif; */
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 6px 9px;
+  
+  }
  
   
-  nav h1{    
-    margin-right: auto; 
+
+  
+ 
+  
+  /* LINK COLOURS ON HOVER */
+  
+  /* .nav_links li a {
+  transition: all 0.3 ease 0s;
+  } */
+  
+a:hover {
+  color: #ffffff;
   }
+  
+  
+  
+  /* button:hover {
+    background-color:  rgba(0, 136, 169, 0.8);
+  }
+   */
+ 
+  
+  /* nav h1{    
+    margin-right: auto; 
+  } */
 
   /* .register{
     background-color: #e2e2e2;
