@@ -12,6 +12,9 @@ import Registration from './Registration/Registration';
 import CourseDetails from './CourseDetails/CourseDetails';
 import { useState } from 'react';
 import Button_cd from './Button_cd/Button_cd';
+import CourseDetailsFinal from './CourseDetails/CourseDetailsFinal';
+// import AboutUs from './About/aboutUs';
+
 
 
 
@@ -26,17 +29,17 @@ function App() {
   let [loggedIn, setLogin] = useState(false) // by default false because user is NOT logged in by default
   let [isLoading,setLoading] = useState(false)
 
-  const handleLogin = ()=>{
+  // const handleLogin = ()=>{
 
-    setLoading(true);
-    // request to backend begins
+  //   setLoading(true);
+  //   // request to backend begins
 
-    setTimeout(()=>{
-        setLogin(!loggedIn)
-        setLoading(false)
+  //   setTimeout(()=>{
+  //       setLogin(!loggedIn)
+  //       setLoading(false)
         
-    },1000)
-  }
+  //   },1000)
+  // }
 
   
   return (
@@ -44,9 +47,7 @@ function App() {
       <nav>
         
       <NavLink to = "/" exact>
-        Home</NavLink>
-      <NavLink to = "/about">
-        About Us</NavLink>
+        Home</NavLink>     
       <NavLink to = "/hackathon">
         Hackathon</NavLink>  
         <NavLink to = "/statistics">
@@ -54,17 +55,19 @@ function App() {
       <NavLink to = "/courses">
         Courses</NavLink> 
         <NavLink to = "/login">
-        </NavLink> 
+        Login</NavLink> 
         <NavLink to = "/registration">
         Registration</NavLink> 
+        <NavLink to = "/about">
+        About Us</NavLink>
 
-        <Button_cd value = {loggedIn} // reference to useState variable
+        {/* <Button_cd value = {loggedIn} // reference to useState variable
         displayTrue = {"Log out"}
         displayFalse = {"Log In"}
         handleChange = {handleLogin}
         
         > 
-        </Button_cd>
+        </Button_cd> */}
        
       </nav>
 
@@ -79,9 +82,24 @@ function App() {
         <Route path = "/registration" component = {Registration} /> 
         <Route path = "/hackathon" component = {Hackathon} />
 
-        <Route path = "/courses/:id/:name">
+
+        
+       
+
+
+        {/* <Route path = "/courses/:id/:name">
           <CourseDetails isUserLoggedIn = {loggedIn}></CourseDetails>
+          
+        </Route> */}
+
+
+        <Route path = "/courses/:id/:name">
+          <CourseDetailsFinal > </CourseDetailsFinal>
         </Route>
+
+        
+        
+
         <Route path = "/courses" component = {Courses} />          
       </Switch>
 
